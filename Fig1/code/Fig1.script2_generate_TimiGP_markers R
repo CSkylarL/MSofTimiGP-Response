@@ -134,7 +134,7 @@ library(ggpubr)
 library(RColorBrewer)
 
 # The input and the output directories
-myoutd <- myoutd <- "./Fig1/result/customized_markers_for_TimiGP/"
+myoutd <- "./Fig1/result/customized_markers_for_TimiGP/"
 myinf1 <- paste0(myoutd, "unprocessed_markers_for_TimiGP.rda")
 myinf2 <- paste0(myoutd, "spatial_markers.rda")
 myoutf1 <- paste0(myoutd, "TNBC_scRNA_marker_for_spatial.rda")
