@@ -19,6 +19,10 @@ library(dplyr)
 library(RColorBrewer)
 library(tibble)
 library(scales)
+library(ggplot2)
+library(data.table)
+library(gridExtra)
+library(reshape)
 
 # The input files
 
@@ -47,8 +51,10 @@ myinf3 <- "./data/TNBC_scRNA_GSE169246/clinical_info.csv"
 myoutd <- "./Fig1/result/Figures_Tables"
 dir.create(myoutd)
 myoutf1 <- paste0(myoutd,"/Fig1b_UMAP_all_cell.pdf")
-myoutf2 <- paste0(myoutd,"/UMAP_clinical_info.pdf")
-
+myoutf2 <- paste0(myoutd,"/FigS2a_UMAP_clinical_info.pdf")
+myoutf3 <- paste0(myoutd,"/Fig1e_scRNA_marker_dotplot.pdf")
+myoutf4 <- paste0(myoutd,"/FigS3_scRNA_marker_featureplot.pdf")
+myoutf5 <- paste0(myoutd,"/FigS2b_scRNA_cell_proportion.pdf")
 # settings for visualization  --------------------------------------------------
 source(myconfig1)
 cell <- c(cell,
@@ -62,8 +68,10 @@ color <- c(color,
 color <- alpha(color,0.8)
 names(color) <- cell
 
-# Fig1b All cell type in one figure --------------------------------------------
+# load data --------------------------------------------------------------------
 normalized.data <- readRDS(myinf1)
+
+# Fig1b All cell type in one figure --------------------------------------------
 normalized.data@meta.data$CellType <- normalized.data@meta.data$CellType2 %>% 
   gsub(pattern = "^",replacement = "", fixed = T) %>% 
   gsub(pattern = "_{E",replacement = "e", fixed = T) %>% 
@@ -78,7 +86,7 @@ DimPlot(normalized.data, reduction = "umap",
 dev.off()
 
 
-# Other info --------------------------------------------------
+# ExtendedDataFig.2A Other info ------------------------------------------------
 normalized.data@meta.data$CellType <- normalized.data@meta.data$CellType2 %>% 
   gsub(pattern = "^",replacement = "", fixed = T) %>% 
   gsub(pattern = "_{E",replacement = "e", fixed = T) %>% 
@@ -103,17 +111,128 @@ normalized.data@meta.data$Response <- ifelse(normalized.data@meta.data$Clinical.
   factor(levels = c("Responder","Non-Responder"))
 table(normalized.data$Response,exclude = F)
 
-pdf(myoutf4, width = 14,height = 20)
+pdf(myoutf2, width = 16,height = 12)
 mycols <- c(brewer.pal(5,"Set1"), brewer.pal(8,"Dark2"), brewer.pal(8,"YlGnBu")[7])
 mycols <- alpha(mycols,0.3)
 DimPlot(normalized.data, reduction = "umap", ncol = 2,cols = mycols,
-        group.by = c("Patient","TimePoint","Treatment",
-                     "Response","Clinical.efficacy.",
-                     "Biopsied.lesion"), label = F, 
-        pt.size = 0.1, raster = F)
+        group.by = c("Patient","TimePoint","Treatment","Response"), label = F, 
+        pt.size = 0.1, raster = T)
 dev.off()
-seurat_obj <- normalized.data
-save(seurat_obj,file = myoutf5)
+
+# scRNA Dotplot ================================================================
+# Fig1e dot plot for main figure -----------------------------------------------
+
+normalized.data <- normalized.data %>% 
+  subset(subset = CellType2 != "Uncharacterized")
+
+normalized.data@meta.data$CellType <- normalized.data@meta.data$CellType2 %>% 
+  gsub(pattern = "^",replacement = "", fixed = T) %>% 
+  gsub(pattern = "_{E",replacement = "e", fixed = T) %>% 
+  gsub(pattern = "DCs",replacement = "cDC", fixed = T) %>% 
+  gsub(pattern = " Mac",replacement = "", fixed = T) %>% 
+  gsub(pattern = "}",replacement = "", fixed = T) %>%
+  factor(levels = cell[length(cell):1])
+
+Idents(normalized.data) <- "CellType"
+
+pdf(myoutf3, width = 10,height = 5)
+DotPlot(object =normalized.data , scale = T,
+        feature= gene) + 
+  theme(axis.text.x = element_text(angle = 90,hjust=1)) +
+  geom_point(aes(size=pct.exp), shape = 21, colour="black", stroke=0.5) +
+  scale_colour_gradient2(low = "blue", mid = "white", high = "red") +
+  guides(size=guide_legend(override.aes=list(shape=21, 
+                                             colour="black", 
+                                             fill="white"),
+                           title = "Percent Expressed" ))
+dev.off()
+
+
+pdf(myoutf4, width = 24, height = 35)
+FeaturePlot(normalized.data, features = gene,ncol = 5,
+            pt.size = 0.1,
+            raster=T, max.cutoff = 4, label = T)
+dev.off()
+
+# ExtendeData 2b scRNA stackplot ===============================================
+# Reset the cell type
+source(myconfig1)
+
+normalized.data <- normalized.data %>% 
+  subset(subset = CellType2 != "Uncharacterized")
+
+normalized.data@meta.data$CellType <- normalized.data@meta.data$CellType2 %>% 
+  gsub(pattern = "^",replacement = "", fixed = T) %>% 
+  gsub(pattern = "_{E",replacement = "e", fixed = T) %>% 
+  gsub(pattern = "DCs",replacement = "cDC", fixed = T) %>% 
+  gsub(pattern = " Mac",replacement = "", fixed = T) %>% 
+  gsub(pattern = "}",replacement = "", fixed = T) %>%
+  factor(levels = cell) 
+
+info <- normalized.data@meta.data[,c("CellType","Patient","Treatment","Response","TimePoint")] %>%
+  mutate(Treatment = ifelse(Treatment == "Chemo", "C", "C&I")) %>% 
+  data.frame()
+dim(info)
+
+mylist <- data.frame(Treatment = c(rep("C&I",2)) ,
+                     TimePoint = c("Pre","Post"))
+
+color <- alpha(color,0.8)
+p.list <- list()
+for ( ii in 1:nrow(mylist)) {
+  
+  ref <- info %>%
+    filter(Treatment == mylist$Treatment[ii] & 
+             TimePoint == mylist$TimePoint[ii] ) %>%
+    select(Patient, Response) %>%
+    unique()
+  rownames(ref) <- NULL
+  
+  
+  p.data  <- info %>%
+    filter(Treatment == mylist$Treatment[ii] & 
+             TimePoint == mylist$TimePoint[ii] ) %>%
+    group_by(Patient,CellType,.drop = F) %>%
+    count(name = "Count") %>%
+    data.frame() %>%
+    merge(y=ref, by ="Patient")
+  
+  p.list[[ii]] <- p.data %>%
+    ggplot(aes(fill=CellType, y=Count, x=Patient)) + 
+    geom_bar(position="fill", stat="identity")+
+    scale_fill_manual(name="Cell Type", 
+                      values= color) +
+    theme_bw(base_size = 12, base_family = "serif") + 
+    facet_grid( ~ Response, space="free", scales="free",drop = TRUE) +
+    theme(
+      panel.grid.minor=element_blank(),
+      panel.grid.major=element_blank()
+    ) +
+    labs(x="Patient ID",y="Percentage of Immune Cells",
+         title=paste0( "Cell Proportion - Treatment: ",
+                       mylist$Treatment[ii],
+                       "(",
+                       mylist$TimePoint[ii],
+                       ")")) +
+    theme(legend.position="right",
+          legend.direction ="vertical",
+          legend.box = "vertical",
+          panel.grid=element_blank(),
+          legend.title = element_text(face="bold", color="black",family = "serif", size=12),
+          legend.text= element_text(face="bold", color="black",family = "serif", size=12),
+          plot.title = element_text(hjust = 0.5),
+          axis.text.x = element_text(face="bold", color="black",family = "serif", size=10),
+          axis.text.y = element_text(face="bold", color="black", family = "serif",size=10),
+          axis.title.x = element_text(face="bold", color="black",family = "serif", size=12),
+          axis.title.y = element_text(face="bold",color="black",family = "serif", size=12)) +
+    scale_y_continuous(expand = c(0,0)) 
+  
+}
+
+
+pdf(myoutf5, width = 12,height = 4.5)
+do.call("grid.arrange", c(plotlist = p.list, ncol=2))
+dev.off()
 
 # Spatial Heatmap #######################################################################
 rm(list = ls())
@@ -189,148 +308,9 @@ pdf(myoutf1,
 print(p1)
 dev.off()
 
-# scRNA Dotplot ###################################################################
-rm(list = ls())
-library(Seurat)
-library(dplyr)
-library(ggplot2)
-myoutd <- "~/ChaoCheng/A_TimiGP_Therapy/A05_TimiFisher_TNBC/Fig1"
-myconfig1 <- "~/ChaoCheng/A_TimiGP_Therapy/A05_TimiFisher_TNBC/Fig1_config.R"
-source(myconfig1)
-
-myinf1 <- paste0(myoutd,"/TNBC_scRNA_GSE169246_seurat_obj.rda")
-
-myoutf1 <- paste0(myoutd,"/scRNA_marker_dotplot.pdf")
-myoutf2 <- paste0(myoutd,"/scRNA_marker_featureplot.pdf")
-
-# dot plot for main figure --------------------------------------------------
-load(myinf1)
-
-normalized.data <- seurat_obj %>% subset(subset = CellType2 != "Uncharacterized")
-normalized.data@meta.data$CellType <- normalized.data@meta.data$CellType2 %>% 
-  gsub(pattern = "^",replacement = "", fixed = T) %>% 
-  gsub(pattern = "_{E",replacement = "e", fixed = T) %>% 
-  gsub(pattern = "DCs",replacement = "cDC", fixed = T) %>% 
-  gsub(pattern = " Mac",replacement = "", fixed = T) %>% 
-  gsub(pattern = "}",replacement = "", fixed = T) %>%
-  factor(levels = cell[length(cell):1])
-
-Idents(normalized.data) <- "CellType"
-
-pdf(myoutf1, width = 10,height = 5)
-DotPlot(object =normalized.data , scale = T,
-        feature= gene) + 
-  theme(axis.text.x = element_text(angle = 90,hjust=1)) +
-  geom_point(aes(size=pct.exp), shape = 21, colour="black", stroke=0.5) +
-  scale_colour_gradient2(low = "blue", mid = "white", high = "red") +
-  guides(size=guide_legend(override.aes=list(shape=21, 
-                                             colour="black", 
-                                             fill="white"),
-                           title = "Percent Expressed" ))
-dev.off()
-
-
-pdf(myoutf2, width = 24, height = 35)
-FeaturePlot(normalized.data, features = gene,ncol = 5,
-            pt.size = 0.1,
-            raster=T, max.cutoff = 4, label = T)
-dev.off()
-
-# scRNA stackplot ###################################################################
-rm(list = ls())
-library(Seurat)
-library(data.table)
-library(dplyr)
-library(ggplot2)
-library(gridExtra)
-library(reshape)
-myoutd <- "~/ChaoCheng/A_TimiGP_Therapy/A05_TimiFisher_TNBC/Fig1"
-myconfig1 <- "~/ChaoCheng/A_TimiGP_Therapy/A05_TimiFisher_TNBC/Fig1_config.R"
-source(myconfig1)
-
-myinf1 <- paste0(myoutd,"/TNBC_scRNA_GSE169246_seurat_obj.rda")
-
-myoutf1 <- paste0(myoutd,"/scRNA_cell_proportion.pdf")
-
-# dot plot for main figure --------------------------------------------------
-load(myinf1)
-
-normalized.data <- seurat_obj %>% subset(subset = CellType2 != "Uncharacterized")
-normalized.data@meta.data$CellType <- normalized.data@meta.data$CellType2 %>% 
-  gsub(pattern = "^",replacement = "", fixed = T) %>% 
-  gsub(pattern = "_{E",replacement = "e", fixed = T) %>% 
-  gsub(pattern = "DCs",replacement = "cDC", fixed = T) %>% 
-  gsub(pattern = " Mac",replacement = "", fixed = T) %>% 
-  gsub(pattern = "}",replacement = "", fixed = T) %>%
-  factor(levels = cell) 
-
-
-info <- normalized.data@meta.data[,c("CellType","Patient","Treatment","Response","TimePoint")] %>%
-  mutate(Treatment = ifelse(Treatment == "Chemo", "C", "C&I")) %>% 
-  data.frame()
-dim(info)
 
 
 
-mylist <- data.frame(Treatment = c(rep("C&I",2),rep("C",2)) ,
-                     TimePoint = rep(c("Pre","Post"),2))
-
-color <- alpha(color,0.8)
-p.list <- list()
-for ( ii in 1:nrow(mylist)) {
-
-  ref <- info %>%
-    filter(Treatment == mylist$Treatment[ii] & 
-             TimePoint == mylist$TimePoint[ii] ) %>%
-    select(Patient, Response) %>%
-    unique()
-  rownames(ref) <- NULL
-
-  
-  p.data  <- info %>%
-    filter(Treatment == mylist$Treatment[ii] & 
-             TimePoint == mylist$TimePoint[ii] ) %>%
-    group_by(Patient,CellType,.drop = F) %>%
-    count(name = "Count") %>%
-    data.frame() %>%
-    merge(y=ref, by ="Patient")
-  
-  p.list[[ii]] <- p.data %>%
-    ggplot(aes(fill=CellType, y=Count, x=Patient)) + 
-    geom_bar(position="fill", stat="identity")+
-    scale_fill_manual(name="Cell Type", 
-                      values= color) +
-    theme_bw(base_size = 12, base_family = "serif") + 
-    facet_grid( ~ Response, space="free", scales="free",drop = TRUE) +
-    theme(
-      panel.grid.minor=element_blank(),
-      panel.grid.major=element_blank()
-    ) +
-    labs(x="Patient ID",y="Percentage of Immune Cells",
-         title=paste0( "Cell Proportion - Treatment: ",
-                       mylist$Treatment[ii],
-                       "(",
-                       mylist$TimePoint[ii],
-                       ")")) +
-    theme(legend.position="right",
-          legend.direction ="vertical",
-          legend.box = "vertical",
-          panel.grid=element_blank(),
-          legend.title = element_text(face="bold", color="black",family = "serif", size=12),
-          legend.text= element_text(face="bold", color="black",family = "serif", size=12),
-          plot.title = element_text(hjust = 0.5),
-          axis.text.x = element_text(face="bold", color="black",family = "serif", size=10),
-          axis.text.y = element_text(face="bold", color="black", family = "serif",size=10),
-          axis.title.x = element_text(face="bold", color="black",family = "serif", size=12),
-          axis.title.y = element_text(face="bold",color="black",family = "serif", size=12)) +
-    scale_y_continuous(expand = c(0,0)) 
-  
-}
-
-
-pdf(myoutf1, width = 12,height = 8)
-do.call("grid.arrange", c(plotlist = p.list, ncol=2))
-dev.off()
 
 # TimiGP IMC dotplot ###################################################################
 # conclusion: only use the C&I and GSE194040 set
@@ -636,4 +616,5 @@ qv
   # Spatial value gene
 
 # TODO IMC_TimiGP_dotplot
-# AI: add "* FDR < 0.1" and" border circle, P-Value < 0.05" 
+# Using adobe illustrator to 
+# add "* FDR < 0.1" and" border circle, P-Value < 0.05" 
