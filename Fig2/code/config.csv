@@ -1,0 +1,115 @@
+order,oldname,newname,cancer,color,CI_geneset,CI_condition,CI_cutoff,location
+1,VanAllen_phs000452.v2.p1,phs000452.v2.p1: IPI,SKCM,#a41e22,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/VanAllen_phs000452.v2.p1
+2,UlloaMontoya_GSE35640,GSE35640: MAGE-3,SKCM,#a41e22,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/UlloaMontoya_GSE35640
+3,Hugo_GSE78220,GSE78220: NIV/PEM,SKCM,#a41e22,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Hugo_GSE78220
+4,Liu_phs000452.v3.p1,phs000452.v3.p1: NIV/PEM,SKCM,#a41e22,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Liu_phs000452.v3.p1
+5,Gide_2019,Gide2019: NIV/PEM+(IPI),SKCM,#a41e22,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Gide_2019
+6,Gide_2019_mono,Gide2019: NIV/PEM,SKCM,#a41e22,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Gide_2019
+7,Gide_2019_comb,Gide2019: NIV/PEM+IPI,SKCM,#a41e22,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Gide_2019
+8,Riaz_GSE91061_pre,GSE91061pre: NIV/PEM+(IPI),SKCM,#a41e22,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Riaz_GSE91061_pre
+9,Riaz_GSE91061_pre_mono,GSE91061pre: NIV/PEM,SKCM,#a41e22,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Riaz_GSE91061_pre
+10,Riaz_GSE91061_pre_comb,GSE91061pre: NIV/PEM+IPI,SKCM,#a41e22,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Riaz_GSE91061_pre
+11,Riaz_GSE91061_on,GSE91061on: NIV/PEM+(IPI),SKCM,#a41e22,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Riaz_GSE91061_on
+12,Banchereau_POPLAR_docetaxel,POPLAR: TXT,NSCLC,#542e8d,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Banchereau_POPLAR_docetaxel
+13,Patil_OAK_docetaxel,OAK: TXT,NSCLC,#542e8d,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Patil_OAK_docetaxel
+14,Lee_GSE166449,GSE166449: PEM,NSCLC,#542e8d,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Lee_GSE166449
+15,Cho_GSE126044,GSE126044: NIV/PEM,NSCLC,#542e8d,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Cho_GSE126044
+16,Banchereau_PCD4989g_NSCLC,PCD4989g: ATEZO,NSCLC,#542e8d,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Banchereau_PCD4989g_NSCLC
+17,Banchereau_POPLAR,POPLAR: ATEZO,NSCLC,#542e8d,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Banchereau_POPLAR
+18,Patil_OAK,OAK: ATEZO,NSCLC,#542e8d,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Patil_OAK
+19,Banchereau_IMmotion150_sunitinib,IMmotion150: SUN,RCC,#086d38,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Banchereau_IMmotion150_sunitinib
+20,Motzer_IMmotion151_sunitinib,IMmotion151: SUN,RCC,#086d38,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Motzer_IMmotion151_sunitinib
+21,Miao_phs001493.v1.p1,phs001493.v1.p1:NIV,RCC,#086d38,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Miao_phs001493.v1.p1
+22,Banchereau_IMmotion150,IMmotion150: ATEZO,RCC,#086d38,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Banchereau_IMmotion150
+23,Banchereau_PCD4989g_RCC,PCD4989g: ATEZO,RCC,#086d38,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Banchereau_PCD4989g_RCC
+24,Banchereau_IMmotion150_atezo_bev,IMmotion150: ATEZO+BEV,RCC,#086d38,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Banchereau_IMmotion150_atezo_bev
+25,Motzer_IMmotion151_atezo_bev,IMmotion151: ATEZO+BEV,RCC,#086d38,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Motzer_IMmotion151_atezo_bev
+26,Banchereau_IMvigor210,IMvigor210: ATEZO,mUC,#08529c,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Banchereau_IMvigor210
+27,Banchereau_PCD4989g_mUC,PCD4989g: ATEZO,mUC,#08529c,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Banchereau_PCD4989g_mUC
+28,Snyder_2017,Snyder2017: ATEZO,mUC,#08529c,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Snyder_2017
+29,Zhu_GO30140_IMbrave150_sorafenib,GO30140+IMbrave150: SOR,HCC,#ad207f,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Zhu_GO30140_IMbrave150_sorafenib
+30,Zhu_GO30140_IMbrave150,GO30140+IMbrave150: ATEZO,HCC,#ad207f,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Zhu_GO30140_IMbrave150
+31,Zhu_GO30140_IMbrave150_atezo_bev,GO30140+IMbrave150: ATEZO+BEV,HCC,#ad207f,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Zhu_GO30140_IMbrave150_atezo_bev
+32,Wolf_GSE194040_ISPY2_paclitaxel_TNBC,GSE194040(TNBC):PTX,BC,#01665e,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Wolf_GSE194040_ISPY2_paclitaxel_TNBC
+33,Wolf_GSE194040_ISPY2_ptx_pem_TNBC,GSE194040(TNBC):PTX+PEM,BC,#01665e,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Wolf_GSE194040_ISPY2_ptx_pem_TNBC
+34,Wolf_GSE194040_ISPY2_paclitaxel_non-TNBC,GSE194040(non-TNBC):PTX,BC,#01665e,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Wolf_GSE194040_ISPY2_paclitaxel_non-TNBC
+35,Wolf_GSE194040_ISPY2_ptx_pem_non-TNBC,GSE194040(non-TNBC):PTX+PEM,BC,#01665e,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Wolf_GSE194040_ISPY2_ptx_pem_non-TNBC
+36,Ende_GSE165252_pre,GSE165252pre:ATEZO,EC,#8c510a,Bindea2013_Cancer,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Ende_GSE165252_pre
+37,Ende_GSE165252_on,GSE165252on:ATEZO,EC,#8c510a,Bindea2013_Cancer,P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Ende_GSE165252_on
+38,Ende_GSE165252_post,GSE165252post:ATEZO,EC,#8c510a,Bindea2013_Cancer,P.Value,0.05,./Fig2/result/pan_cancer_Tumor_TIME_control/Ende_GSE165252_post
+1,VanAllen_phs000452.v2.p1,phs000452.v2.p1: IPI,SKCM,#a41e22,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/VanAllen_phs000452.v2.p1
+2,UlloaMontoya_GSE35640,GSE35640: MAGE-3,SKCM,#a41e22,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/UlloaMontoya_GSE35640
+3,Hugo_GSE78220,GSE78220: NIV/PEM,SKCM,#a41e22,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Hugo_GSE78220
+4,Liu_phs000452.v3.p1,phs000452.v3.p1: NIV/PEM,SKCM,#a41e22,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Liu_phs000452.v3.p1
+5,Gide_2019,Gide2019: NIV/PEM+(IPI),SKCM,#a41e22,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Gide_2019
+6,Gide_2019_mono,Gide2019: NIV/PEM,SKCM,#a41e22,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Gide_2019
+7,Gide_2019_comb,Gide2019: NIV/PEM+IPI,SKCM,#a41e22,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Gide_2019
+8,Riaz_GSE91061_pre,GSE91061pre: NIV/PEM+(IPI),SKCM,#a41e22,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Riaz_GSE91061_pre
+9,Riaz_GSE91061_pre_mono,GSE91061pre: NIV/PEM,SKCM,#a41e22,Zheng2021,P.Value,0.01,./Fig2/result/pan_cancer_T_Cell_landscape/Riaz_GSE91061_pre
+10,Riaz_GSE91061_pre_comb,GSE91061pre: NIV/PEM+IPI,SKCM,#a41e22,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Riaz_GSE91061_pre
+11,Riaz_GSE91061_on,GSE91061on: NIV/PEM+(IPI),SKCM,#a41e22,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Riaz_GSE91061_on
+12,Banchereau_POPLAR_docetaxel,POPLAR: TXT,NSCLC,#542e8d,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Banchereau_POPLAR_docetaxel
+13,Patil_OAK_docetaxel,OAK: TXT,NSCLC,#542e8d,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Patil_OAK_docetaxel
+14,Lee_GSE166449,GSE166449: PEM,NSCLC,#542e8d,Zheng2021,P.Value,0.01,./Fig2/result/pan_cancer_T_Cell_landscape/Lee_GSE166449
+15,Cho_GSE126044,GSE126044: NIV/PEM,NSCLC,#542e8d,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Cho_GSE126044
+16,Banchereau_PCD4989g_NSCLC,PCD4989g: ATEZO,NSCLC,#542e8d,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Banchereau_PCD4989g_NSCLC
+17,Banchereau_POPLAR,POPLAR: ATEZO,NSCLC,#542e8d,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Banchereau_POPLAR
+18,Patil_OAK,OAK: ATEZO,NSCLC,#542e8d,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Patil_OAK
+19,Banchereau_IMmotion150_sunitinib,IMmotion150: SUN,RCC,#086d38,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Banchereau_IMmotion150_sunitinib
+20,Motzer_IMmotion151_sunitinib,IMmotion151: SUN,RCC,#086d38,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Motzer_IMmotion151_sunitinib
+21,Miao_phs001493.v1.p1,phs001493.v1.p1:NIV,RCC,#086d38,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Miao_phs001493.v1.p1
+22,Banchereau_IMmotion150,IMmotion150: ATEZO,RCC,#086d38,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Banchereau_IMmotion150
+23,Banchereau_PCD4989g_RCC,PCD4989g: ATEZO,RCC,#086d38,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Banchereau_PCD4989g_RCC
+24,Banchereau_IMmotion150_atezo_bev,IMmotion150: ATEZO+BEV,RCC,#086d38,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Banchereau_IMmotion150_atezo_bev
+25,Motzer_IMmotion151_atezo_bev,IMmotion151: ATEZO+BEV,RCC,#086d38,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Motzer_IMmotion151_atezo_bev
+26,Banchereau_IMvigor210,IMvigor210: ATEZO,mUC,#08529c,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Banchereau_IMvigor210
+27,Banchereau_PCD4989g_mUC,PCD4989g: ATEZO,mUC,#08529c,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Banchereau_PCD4989g_mUC
+28,Snyder_2017,Snyder2017: ATEZO,mUC,#08529c,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Snyder_2017
+29,Zhu_GO30140_IMbrave150_sorafenib,GO30140+IMbrave150: SOR,HCC,#ad207f,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Zhu_GO30140_IMbrave150_sorafenib
+30,Zhu_GO30140_IMbrave150,GO30140+IMbrave150: ATEZO,HCC,#ad207f,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Zhu_GO30140_IMbrave150
+31,Zhu_GO30140_IMbrave150_atezo_bev,GO30140+IMbrave150: ATEZO+BEV,HCC,#ad207f,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Zhu_GO30140_IMbrave150_atezo_bev
+32,Wolf_GSE194040_ISPY2_paclitaxel_TNBC,GSE194040(TNBC):PTX,BC,#01665e,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Wolf_GSE194040_ISPY2_paclitaxel_TNBC
+33,Wolf_GSE194040_ISPY2_ptx_pem_TNBC,GSE194040(TNBC):PTX+PEM,BC,#01665e,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Wolf_GSE194040_ISPY2_ptx_pem_TNBC
+34,Wolf_GSE194040_ISPY2_paclitaxel_non-TNBC,GSE194040(non-TNBC):PTX,BC,#01665e,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Wolf_GSE194040_ISPY2_paclitaxel_non-TNBC
+35,Wolf_GSE194040_ISPY2_ptx_pem_non-TNBC,GSE194040(non-TNBC):PTX+PEM,BC,#01665e,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Wolf_GSE194040_ISPY2_ptx_pem_non-TNBC
+36,Ende_GSE165252_pre,GSE165252pre:ATEZO,EC,#8c510a,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Ende_GSE165252_pre
+37,Ende_GSE165252_on,GSE165252on:ATEZO,EC,#8c510a,Zheng2021,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Ende_GSE165252_on
+38,Ende_GSE165252_post,GSE165252post:ATEZO,EC,#8c510a,Zheng2021,P.Value,0.05,./Fig2/result/pan_cancer_T_Cell_landscape/Ende_GSE165252_post
+1,VanAllen_phs000452.v2.p1,phs000452.v2.p1: IPI,SKCM,#a41e22,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/VanAllen_phs000452.v2.p1
+2,UlloaMontoya_GSE35640,GSE35640: MAGE-3,SKCM,#a41e22,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/UlloaMontoya_GSE35640
+3,Hugo_GSE78220,GSE78220: NIV/PEM,SKCM,#a41e22,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Hugo_GSE78220
+4,Liu_phs000452.v3.p1,phs000452.v3.p1: NIV/PEM,SKCM,#a41e22,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Liu_phs000452.v3.p1
+5,Gide_2019,Gide2019: NIV/PEM+(IPI),SKCM,#a41e22,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Gide_2019
+6,Gide_2019_mono,Gide2019: NIV/PEM,SKCM,#a41e22,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Gide_2019
+7,Gide_2019_comb,Gide2019: NIV/PEM+IPI,SKCM,#a41e22,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Gide_2019
+8,Riaz_GSE91061_pre,GSE91061pre: NIV/PEM+(IPI),SKCM,#a41e22,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Riaz_GSE91061_pre
+9,Riaz_GSE91061_pre_mono,GSE91061pre: NIV/PEM,SKCM,#a41e22,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Riaz_GSE91061_pre
+10,Riaz_GSE91061_pre_comb,GSE91061pre: NIV/PEM+IPI,SKCM,#a41e22,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Riaz_GSE91061_pre
+11,Riaz_GSE91061_on,GSE91061on: NIV/PEM+(IPI),SKCM,#a41e22,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Riaz_GSE91061_on
+12,Banchereau_POPLAR_docetaxel,POPLAR: TXT,NSCLC,#542e8d,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Banchereau_POPLAR_docetaxel
+13,Patil_OAK_docetaxel,OAK: TXT,NSCLC,#542e8d,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Patil_OAK_docetaxel
+14,Lee_GSE166449,GSE166449: PEM,NSCLC,#542e8d,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Lee_GSE166449
+15,Cho_GSE126044,GSE126044: NIV/PEM,NSCLC,#542e8d,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Cho_GSE126044
+16,Banchereau_PCD4989g_NSCLC,PCD4989g: ATEZO,NSCLC,#542e8d,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Banchereau_PCD4989g_NSCLC
+17,Banchereau_POPLAR,POPLAR: ATEZO,NSCLC,#542e8d,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Banchereau_POPLAR
+18,Patil_OAK,OAK: ATEZO,NSCLC,#542e8d,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Patil_OAK
+19,Banchereau_IMmotion150_sunitinib,IMmotion150: SUN,RCC,#086d38,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Banchereau_IMmotion150_sunitinib
+20,Motzer_IMmotion151_sunitinib,IMmotion151: SUN,RCC,#086d38,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Motzer_IMmotion151_sunitinib
+21,Miao_phs001493.v1.p1,phs001493.v1.p1:NIV,RCC,#086d38,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Miao_phs001493.v1.p1
+22,Banchereau_IMmotion150,IMmotion150: ATEZO,RCC,#086d38,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Banchereau_IMmotion150
+23,Banchereau_PCD4989g_RCC,PCD4989g: ATEZO,RCC,#086d38,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Banchereau_PCD4989g_RCC
+24,Banchereau_IMmotion150_atezo_bev,IMmotion150: ATEZO+BEV,RCC,#086d38,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Banchereau_IMmotion150_atezo_bev
+25,Motzer_IMmotion151_atezo_bev,IMmotion151: ATEZO+BEV,RCC,#086d38,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Motzer_IMmotion151_atezo_bev
+26,Banchereau_IMvigor210,IMvigor210: ATEZO,mUC,#08529c,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Banchereau_IMvigor210
+27,Banchereau_PCD4989g_mUC,PCD4989g: ATEZO,mUC,#08529c,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Banchereau_PCD4989g_mUC
+28,Snyder_2017,Snyder2017: ATEZO,mUC,#08529c,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Snyder_2017
+29,Zhu_GO30140_IMbrave150_sorafenib,GO30140+IMbrave150: SOR,HCC,#ad207f,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Zhu_GO30140_IMbrave150_sorafenib
+30,Zhu_GO30140_IMbrave150,GO30140+IMbrave150: ATEZO,HCC,#ad207f,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Zhu_GO30140_IMbrave150
+31,Zhu_GO30140_IMbrave150_atezo_bev,GO30140+IMbrave150: ATEZO+BEV,HCC,#ad207f,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Zhu_GO30140_IMbrave150_atezo_bev
+32,Wolf_GSE194040_ISPY2_paclitaxel_TNBC,GSE194040(TNBC):PTX,BC,#01665e,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Wolf_GSE194040_ISPY2_paclitaxel_TNBC
+33,Wolf_GSE194040_ISPY2_ptx_pem_TNBC,GSE194040(TNBC):PTX+PEM,BC,#01665e,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Wolf_GSE194040_ISPY2_ptx_pem_TNBC
+34,Wolf_GSE194040_ISPY2_paclitaxel_non-TNBC,GSE194040(non-TNBC):PTX,BC,#01665e,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Wolf_GSE194040_ISPY2_paclitaxel_non-TNBC
+35,Wolf_GSE194040_ISPY2_ptx_pem_non-TNBC,GSE194040(non-TNBC):PTX+PEM,BC,#01665e,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Wolf_GSE194040_ISPY2_ptx_pem_non-TNBC
+36,Ende_GSE165252_pre,GSE165252pre:ATEZO,EC,#8c510a,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Ende_GSE165252_pre
+37,Ende_GSE165252_on,GSE165252on:ATEZO,EC,#8c510a,Newman2015,Adjust.P.Value,0.05,./Fig2/result/pan_cancer_TIME_landscape/Ende_GSE165252_on
+38,Ende_GSE165252_post,GSE165252post:ATEZO,EC,#8c510a,Newman2015,P.Value,0.01,./Fig2/result/pan_cancer_TIME_landscape/Ende_GSE165252_post
