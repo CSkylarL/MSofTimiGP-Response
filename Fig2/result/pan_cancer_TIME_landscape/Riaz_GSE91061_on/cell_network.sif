@@ -1,0 +1,48 @@
+Bm	TimiGP	Plasma
+Bm	TimiGP	Eosinophil
+Bn	TimiGP	Plasma
+Bn	TimiGP	Eosinophil
+Bm	TimiGP	Tfh
+Bn	TimiGP	Tfh
+rNK	TimiGP	Eosinophil
+Tgd	TimiGP	aDC
+Bm	TimiGP	Bn
+Plasma	TimiGP	Bn
+Plasma	TimiGP	Eosinophil
+Neutrophil	TimiGP	Plasma
+aNK	TimiGP	Eosinophil
+aNK	TimiGP	Plasma
+rNK	TimiGP	aDC
+rNK	TimiGP	Plasma
+Plasma	TimiGP	aDC
+aNK	TimiGP	aDC
+Tgd	TimiGP	Plasma
+CD4 Tn	TimiGP	Tfh
+Tgd	TimiGP	Eosinophil
+Plasma	TimiGP	Bm
+M2	TimiGP	Plasma
+CD8 T	TimiGP	Eosinophil
+Tgd	TimiGP	M1
+CD4 Tn	TimiGP	Eosinophil
+CD8 T	TimiGP	aDC
+M1	TimiGP	Plasma
+CD8 T	TimiGP	M1
+rCD4 Tm	TimiGP	Eosinophil
+Plasma	TimiGP	Tfh
+CD4 Tn	TimiGP	Plasma
+aNK	TimiGP	M1
+Bm	TimiGP	aDC
+rNK	TimiGP	M1
+CD8 T	TimiGP	Plasma
+Bn	TimiGP	Bm
+Tfh	TimiGP	Eosinophil
+Neutrophil	TimiGP	Eosinophil
+Eosinophil	TimiGP	Plasma
+M2	TimiGP	Eosinophil
+Plasma	TimiGP	M1
+rCD4 Tm	TimiGP	Plasma
+rCD4 Tm	TimiGP	aDC
+Tgd	TimiGP	M2
+Bm	TimiGP	Treg
+aNK	TimiGP	M2
+CD4 Tn	TimiGP	Bm

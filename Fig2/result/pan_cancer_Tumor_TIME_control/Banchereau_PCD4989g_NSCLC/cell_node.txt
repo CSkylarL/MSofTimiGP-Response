@@ -1,0 +1,11 @@
+Key	No.Markers	Group
+B	34	B Cell
+CD56bright NK	11	NK Cell
+Cytotoxic	17	Cytotoxic Cell
+Eosinophil	32	Granulocytes
+iDC	31	DC
+Macrophage	33	Mononuclear phagocyte system
+Neutrophil	31	Granulocytes
+NK	37	NK Cell
+Tcm	39	T Cell
+Tfh	32	T Cell

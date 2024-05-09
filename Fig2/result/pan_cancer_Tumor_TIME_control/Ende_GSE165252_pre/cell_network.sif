@@ -1,0 +1,38 @@
+Neutrophil	TimiGP	B
+Macrophage	TimiGP	Mast
+Th2	TimiGP	Mast
+Cytotoxic	TimiGP	Mast
+CD8 T	TimiGP	Mast
+Th1	TimiGP	Mast
+Th	TimiGP	Mast
+Macrophage	TimiGP	B
+Tfh	TimiGP	Mast
+Tcm	TimiGP	Mast
+Neutrophil	TimiGP	Mast
+T	TimiGP	Mast
+T	TimiGP	B
+Th2	TimiGP	B
+aDC	TimiGP	Mast
+CD8 T	TimiGP	B
+Eosinophil	TimiGP	Mast
+Th	TimiGP	B
+Tem	TimiGP	Mast
+Cytotoxic	TimiGP	B
+Tgd	TimiGP	Mast
+Tfh	TimiGP	B
+Eosinophil	TimiGP	B
+Th1	TimiGP	B
+NK	TimiGP	B
+Tem	TimiGP	B
+NK	TimiGP	Mast
+CD56dim NK	TimiGP	Mast
+B	TimiGP	Mast
+Th2	TimiGP	iDC
+Th	TimiGP	iDC
+Th1	TimiGP	iDC
+Tcm	TimiGP	B
+CD56dim NK	TimiGP	B
+iDC	TimiGP	B
+Macrophage	TimiGP	Eosinophil
+Tumor	TimiGP	Mast
+Tumor	TimiGP	B

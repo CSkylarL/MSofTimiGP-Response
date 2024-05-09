@@ -1,0 +1,93 @@
+T	TimiGP	Tumor
+T	TimiGP	CD8 T
+T	TimiGP	Eosinophil
+T	TimiGP	Tcm
+T	TimiGP	Mast
+T	TimiGP	iDC
+T	TimiGP	NK
+T	TimiGP	Th2
+T	TimiGP	Tfh
+T	TimiGP	Neutrophil
+T	TimiGP	Th
+T	TimiGP	Macrophage
+Cytotoxic	TimiGP	Tumor
+T	TimiGP	Th1
+Cytotoxic	TimiGP	CD8 T
+T	TimiGP	B
+Cytotoxic	TimiGP	Eosinophil
+T	TimiGP	Tem
+Cytotoxic	TimiGP	Mast
+B	TimiGP	Tumor
+Cytotoxic	TimiGP	Tcm
+Cytotoxic	TimiGP	NK
+T	TimiGP	DC
+Cytotoxic	TimiGP	iDC
+T	TimiGP	CD56dim NK
+Cytotoxic	TimiGP	Th
+Cytotoxic	TimiGP	Neutrophil
+Cytotoxic	TimiGP	Tfh
+Th1	TimiGP	Tumor
+Cytotoxic	TimiGP	Th2
+B	TimiGP	Eosinophil
+T	TimiGP	CD56bright NK
+B	TimiGP	CD8 T
+B	TimiGP	Mast
+B	TimiGP	Tcm
+T	TimiGP	Tgd
+B	TimiGP	iDC
+Cytotoxic	TimiGP	Tem
+Cytotoxic	TimiGP	Macrophage
+B	TimiGP	NK
+Cytotoxic	TimiGP	Th1
+T	TimiGP	Cytotoxic
+B	TimiGP	Tfh
+B	TimiGP	Neutrophil
+Cytotoxic	TimiGP	CD56dim NK
+Th1	TimiGP	Eosinophil
+B	TimiGP	Th
+aDC	TimiGP	Tumor
+Th1	TimiGP	CD8 T
+Cytotoxic	TimiGP	B
+B	TimiGP	Th2
+Th1	TimiGP	Tcm
+Th1	TimiGP	iDC
+B	TimiGP	Macrophage
+Cytotoxic	TimiGP	Tgd
+Th1	TimiGP	Mast
+Th1	TimiGP	NK
+Th1	TimiGP	Th
+aDC	TimiGP	CD8 T
+B	TimiGP	Tem
+Th1	TimiGP	Tfh
+Th1	TimiGP	Th2
+Cytotoxic	TimiGP	DC
+aDC	TimiGP	Tcm
+B	TimiGP	CD56bright NK
+Cytotoxic	TimiGP	CD56bright NK
+B	TimiGP	Th1
+aDC	TimiGP	Eosinophil
+aDC	TimiGP	Mast
+Tfh	TimiGP	Tumor
+T	TimiGP	aDC
+B	TimiGP	CD56dim NK
+B	TimiGP	Tgd
+CD56dim NK	TimiGP	Tumor
+Th1	TimiGP	Tem
+aDC	TimiGP	Th
+aDC	TimiGP	NK
+Th1	TimiGP	Neutrophil
+CD8 T	TimiGP	Tumor
+B	TimiGP	DC
+Th1	TimiGP	Tgd
+Th1	TimiGP	Macrophage
+aDC	TimiGP	iDC
+aDC	TimiGP	Tfh
+Tfh	TimiGP	CD8 T
+Neutrophil	TimiGP	Tumor
+Th1	TimiGP	DC
+CD56dim NK	TimiGP	Mast
+Th1	TimiGP	CD56bright NK
+Th1	TimiGP	CD56dim NK
+Macrophage	TimiGP	Tgd
+aDC	TimiGP	Tgd
+Tfh	TimiGP	Eosinophil

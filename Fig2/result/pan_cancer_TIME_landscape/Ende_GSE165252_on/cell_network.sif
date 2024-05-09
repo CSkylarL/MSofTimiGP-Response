@@ -1,0 +1,52 @@
+rDC	TimiGP	aDC
+Bm	TimiGP	CD4 Tn
+Bn	TimiGP	Tfh
+Treg	TimiGP	aDC
+Bm	TimiGP	Tfh
+Tgd	TimiGP	aCD4 Tm
+CD8 T	TimiGP	aCD4 Tm
+Tgd	TimiGP	Tfh
+rNK	TimiGP	aCD4 Tm
+rCD4 Tm	TimiGP	aCD4 Tm
+Treg	TimiGP	aCD4 Tm
+rCD4 Tm	TimiGP	Tfh
+Bm	TimiGP	rCD4 Tm
+Bm	TimiGP	rNK
+Bn	TimiGP	CD4 Tn
+rDC	TimiGP	M1
+Bm	TimiGP	aDC
+Bm	TimiGP	aNK
+rDC	TimiGP	Tfh
+rDC	TimiGP	aCD4 Tm
+CD8 T	TimiGP	Tfh
+aCD4 Tm	TimiGP	Tfh
+Treg	TimiGP	Tfh
+Bm	TimiGP	Treg
+Bn	TimiGP	aDC
+Bn	TimiGP	rCD4 Tm
+Bn	TimiGP	aNK
+aNK	TimiGP	aCD4 Tm
+Bn	TimiGP	rNK
+Bn	TimiGP	Treg
+aDC	TimiGP	aCD4 Tm
+Bm	TimiGP	Tgd
+Bm	TimiGP	aCD4 Tm
+Tfh	TimiGP	aCD4 Tm
+Bm	TimiGP	CD8 T
+aCD4 Tm	TimiGP	aDC
+rCD4 Tm	TimiGP	aDC
+Bn	TimiGP	aCD4 Tm
+aMast	TimiGP	Tgd
+Bn	TimiGP	Tgd
+aMast	TimiGP	aCD4 Tm
+Plasma	TimiGP	aDC
+Tgd	TimiGP	aDC
+Bn	TimiGP	CD8 T
+CD4 Tn	TimiGP	aCD4 Tm
+Bm	TimiGP	M1
+Tgd	TimiGP	CD8 T
+Plasma	TimiGP	Tfh
+M1	TimiGP	aCD4 Tm
+rMast	TimiGP	Plasma
+rNK	TimiGP	Tfh
+aMast	TimiGP	Treg

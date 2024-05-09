@@ -1,0 +1,53 @@
+aDC	TimiGP	CD4 Tn
+aDC	TimiGP	CD8 T
+aDC	TimiGP	Bm
+aDC	TimiGP	rCD4 Tm
+aDC	TimiGP	Tfh
+aDC	TimiGP	Bn
+Plasma	TimiGP	CD8 T
+M1	TimiGP	Plasma
+aDC	TimiGP	Treg
+Plasma	TimiGP	Treg
+aDC	TimiGP	Plasma
+M1	TimiGP	Bm
+M1	TimiGP	Bn
+rNK	TimiGP	Bm
+aDC	TimiGP	aNK
+Plasma	TimiGP	CD4 Tn
+M1	TimiGP	Tfh
+Plasma	TimiGP	rCD4 Tm
+Plasma	TimiGP	Bm
+M1	TimiGP	CD8 T
+Monocyte	TimiGP	Bn
+Plasma	TimiGP	rNK
+Plasma	TimiGP	Tgd
+M0	TimiGP	Bm
+rDC	TimiGP	Bm
+Plasma	TimiGP	aNK
+M1	TimiGP	aNK
+Monocyte	TimiGP	Bm
+rDC	TimiGP	Bn
+M1	TimiGP	CD4 Tn
+aNK	TimiGP	Bm
+rDC	TimiGP	Plasma
+Plasma	TimiGP	Tfh
+M1	TimiGP	rNK
+rNK	TimiGP	CD8 T
+rNK	TimiGP	Bn
+M1	TimiGP	Treg
+Plasma	TimiGP	Bn
+M1	TimiGP	rCD4 Tm
+M0	TimiGP	Bn
+M0	TimiGP	Plasma
+aDC	TimiGP	rNK
+M2	TimiGP	Bm
+aNK	TimiGP	CD8 T
+Monocyte	TimiGP	Plasma
+rDC	TimiGP	CD8 T
+rDC	TimiGP	Tfh
+aDC	TimiGP	Tgd
+rDC	TimiGP	CD4 Tn
+rMast	TimiGP	Bm
+M2	TimiGP	Bn
+Plasma	TimiGP	aCD4 Tm
+rNK	TimiGP	Tfh

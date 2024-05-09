@@ -1,0 +1,111 @@
+Tfh	TimiGP	rMast
+rCD4 Tm	TimiGP	rMast
+CD8 T	TimiGP	rMast
+Bn	TimiGP	Tfh
+Tfh	TimiGP	rNK
+Treg	TimiGP	rMast
+Tfh	TimiGP	Eosinophil
+Bm	TimiGP	Tfh
+CD8 T	TimiGP	rNK
+Bn	TimiGP	CD4 Tn
+rCD4 Tm	TimiGP	rNK
+Bn	TimiGP	Plasma
+Tfh	TimiGP	Neutrophil
+Bm	TimiGP	Plasma
+Treg	TimiGP	rNK
+Tfh	TimiGP	M2
+CD4 Tn	TimiGP	rMast
+Bm	TimiGP	CD4 Tn
+Tfh	TimiGP	aCD4 Tm
+Tfh	TimiGP	aNK
+Bm	TimiGP	Bn
+Bn	TimiGP	rMast
+aNK	TimiGP	rNK
+Bm	TimiGP	rMast
+CD8 T	TimiGP	M2
+rCD4 Tm	TimiGP	Neutrophil
+rCD4 Tm	TimiGP	M2
+Tfh	TimiGP	M1
+Tfh	TimiGP	aMast
+CD8 T	TimiGP	aCD4 Tm
+rCD4 Tm	TimiGP	Eosinophil
+Bm	TimiGP	Neutrophil
+aNK	TimiGP	rMast
+Tfh	TimiGP	Plasma
+Treg	TimiGP	Tfh
+Bm	TimiGP	Eosinophil
+CD4 Tn	TimiGP	Eosinophil
+CD8 T	TimiGP	Neutrophil
+Tfh	TimiGP	Treg
+aCD4 Tm	TimiGP	rMast
+Bn	TimiGP	rNK
+Bn	TimiGP	Neutrophil
+CD8 T	TimiGP	aNK
+Treg	TimiGP	Eosinophil
+Treg	TimiGP	aCD4 Tm
+CD4 Tn	TimiGP	Neutrophil
+rCD4 Tm	TimiGP	aCD4 Tm
+rCD4 Tm	TimiGP	Tfh
+CD8 T	TimiGP	Eosinophil
+rCD4 Tm	TimiGP	aNK
+Tfh	TimiGP	aDC
+Bm	TimiGP	rNK
+Bn	TimiGP	Eosinophil
+Treg	TimiGP	Neutrophil
+rCD4 Tm	TimiGP	M1
+CD8 T	TimiGP	Tfh
+CD8 T	TimiGP	M1
+Tfh	TimiGP	Monocyte
+Tfh	TimiGP	Tgd
+rCD4 Tm	TimiGP	aDC
+Bm	TimiGP	aMast
+Bn	TimiGP	aMast
+rNK	TimiGP	rMast
+Bm	TimiGP	Monocyte
+Bm	TimiGP	M2
+rCD4 Tm	TimiGP	Plasma
+rCD4 Tm	TimiGP	Bm
+Treg	TimiGP	aDC
+Bn	TimiGP	Monocyte
+Bn	TimiGP	Treg
+CD8 T	TimiGP	Plasma
+aNK	TimiGP	Tfh
+Tgd	TimiGP	rMast
+rCD4 Tm	TimiGP	aMast
+rCD4 Tm	TimiGP	Tgd
+Bm	TimiGP	Treg
+Treg	TimiGP	CD4 Tn
+CD8 T	TimiGP	Tgd
+Treg	TimiGP	M2
+Bn	TimiGP	M2
+Bn	TimiGP	Bm
+aNK	TimiGP	Neutrophil
+rCD4 Tm	TimiGP	Treg
+CD8 T	TimiGP	Treg
+Treg	TimiGP	M1
+CD4 Tn	TimiGP	rNK
+CD8 T	TimiGP	aDC
+Treg	TimiGP	Bm
+Bn	TimiGP	CD8 T
+Treg	TimiGP	aNK
+CD8 T	TimiGP	aMast
+rCD4 Tm	TimiGP	CD4 Tn
+CD4 Tn	TimiGP	M2
+aNK	TimiGP	Eosinophil
+Tfh	TimiGP	CD8 T
+Tfh	TimiGP	Bm
+CD8 T	TimiGP	Monocyte
+Treg	TimiGP	aMast
+CD4 Tn	TimiGP	Bm
+Bn	TimiGP	aDC
+CD4 Tn	TimiGP	M1
+CD4 Tn	TimiGP	aCD4 Tm
+rNK	TimiGP	M2
+Bm	TimiGP	CD8 T
+Tgd	TimiGP	rNK
+Tfh	TimiGP	CD4 Tn
+aNK	TimiGP	aMast
+rDC	TimiGP	Tfh
+Bm	TimiGP	aDC
+Bn	TimiGP	M1
+CD8 T	TimiGP	Bm

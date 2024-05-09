@@ -1,0 +1,17 @@
+Key	No.Markers	Group
+aDC	53	DC
+aNK	59	NK Cell
+Bm	62	B Cell
+Bn	60	B Cell
+CD4 Tn	52	T Cell
+CD8 T	68	T Cell
+Eosinophil	51	Granulocytes
+M1	48	Mononuclear phagocyte system
+M2	37	Mononuclear phagocyte system
+Neutrophil	60	Granulocytes
+Plasma	49	B Cell
+rCD4 Tm	64	T Cell
+rNK	57	NK Cell
+Tfh	57	T Cell
+Tgd	58	T Cell
+Treg	64	T Cell

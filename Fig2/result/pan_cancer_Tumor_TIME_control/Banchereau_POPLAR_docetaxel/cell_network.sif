@@ -1,0 +1,20 @@
+Tfh	TimiGP	CD8 T
+T	TimiGP	Neutrophil
+Eosinophil	TimiGP	Neutrophil
+Tfh	TimiGP	iDC
+Macrophage	TimiGP	NK
+Macrophage	TimiGP	Tumor
+Tfh	TimiGP	Neutrophil
+Macrophage	TimiGP	Th
+Th1	TimiGP	Neutrophil
+Tfh	TimiGP	NK
+Tfh	TimiGP	Tumor
+DC	TimiGP	Th
+T	TimiGP	B
+Macrophage	TimiGP	Neutrophil
+B	TimiGP	Neutrophil
+Mast	TimiGP	Tgd
+Th	TimiGP	Neutrophil
+Macrophage	TimiGP	CD56dim NK
+Mast	TimiGP	iDC
+Mast	TimiGP	Tfh

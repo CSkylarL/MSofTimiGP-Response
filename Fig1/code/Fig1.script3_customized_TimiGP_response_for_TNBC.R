@@ -18,7 +18,7 @@ rm(list = ls())
 library(TimiGP)
 
 # The input files
-myinf1 <-  "./data/ImmunoChemotherapy3/Wolf_GSE194040_ISPY2_ptx_pem.rda"
+myinf1 <-  "./data/bulk_transcriptomics/Wolf_GSE194040_ISPY2_ptx_pem_TNBC.rda"
 myinf2 <- "./Fig1/result/customized_markers_for_TimiGP/TNBC_scRNA_marker_for_spatial.rda"
 
 myconfig1 <- "./Fig1/code/Fig1_config.R"
@@ -51,10 +51,6 @@ for (i in 1:length(myinf1)) {
   myoutf4 <- paste0(myoutd1,"/",dataset[i],"_TNBC_dotplot.pdf")
   myoutf5 <- paste0(myoutd1,"/",dataset[i],"_TNBC_circle.pdf")
   myoutf6 <- paste0(myoutd1,"/",dataset[i],"_TNBC_score.pdf")
-  
-  # filter TNBC ----------------------------------------------------------------
-  info <- info %>% filter(her2 == 0 & hr == 0)
-  rna <- rna[ rownames(info)]
   
   cat("\nResponder: ",i, dataset[i], "TNBC info",
       "R/NR" ,"rna", "id_pair","range(rna)\n")

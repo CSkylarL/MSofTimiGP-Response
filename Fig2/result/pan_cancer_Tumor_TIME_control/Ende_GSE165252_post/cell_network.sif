@@ -1,0 +1,24 @@
+Mast	TimiGP	T
+Mast	TimiGP	Cytotoxic
+NK	TimiGP	T
+Mast	TimiGP	iDC
+Mast	TimiGP	B
+NK	TimiGP	B
+Neutrophil	TimiGP	Tumor
+Neutrophil	TimiGP	DC
+DC	TimiGP	Mast
+Tcm	TimiGP	B
+NK	TimiGP	Eosinophil
+CD56dim NK	TimiGP	Cytotoxic
+CD8 T	TimiGP	Tumor
+Tgd	TimiGP	Tcm
+Th	TimiGP	Tfh
+Neutrophil	TimiGP	Eosinophil
+Th2	TimiGP	Eosinophil
+NK	TimiGP	iDC
+Tfh	TimiGP	iDC
+NK	TimiGP	DC
+DC	TimiGP	NK
+DC	TimiGP	Eosinophil
+Cytotoxic	TimiGP	iDC
+CD8 T	TimiGP	Mast

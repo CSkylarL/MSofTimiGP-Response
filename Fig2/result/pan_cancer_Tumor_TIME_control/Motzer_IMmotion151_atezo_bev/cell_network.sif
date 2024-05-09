@@ -1,0 +1,31 @@
+Cytotoxic	TimiGP	Tcm
+Cytotoxic	TimiGP	B
+Cytotoxic	TimiGP	CD8 T
+Cytotoxic	TimiGP	Th
+T	TimiGP	B
+Cytotoxic	TimiGP	Eosinophil
+Cytotoxic	TimiGP	NK
+Cytotoxic	TimiGP	iDC
+Th1	TimiGP	B
+Cytotoxic	TimiGP	Tem
+Cytotoxic	TimiGP	Tfh
+Th1	TimiGP	Tem
+Cytotoxic	TimiGP	Mast
+Cytotoxic	TimiGP	Macrophage
+CD8 T	TimiGP	Th
+T	TimiGP	Tcm
+Th1	TimiGP	Tcm
+CD8 T	TimiGP	Tcm
+CD8 T	TimiGP	Eosinophil
+Cytotoxic	TimiGP	DC
+Cytotoxic	TimiGP	CD56bright NK
+Th1	TimiGP	Th
+CD8 T	TimiGP	B
+Tfh	TimiGP	B
+T	TimiGP	Tfh
+Cytotoxic	TimiGP	Th2
+T	TimiGP	Eosinophil
+CD8 T	TimiGP	Tem
+CD8 T	TimiGP	DC
+Th1	TimiGP	CD56bright NK
+CD8 T	TimiGP	Tfh

@@ -1,0 +1,20 @@
+Key	No.Markers	Group
+aDC	5	DC
+B	34	B Cell
+CD56bright NK	11	NK Cell
+CD56dim NK	15	NK Cell
+CD8 T	37	T Cell
+DC	7	DC
+Eosinophil	32	Granulocytes
+iDC	31	DC
+Macrophage	33	Mononuclear phagocyte system
+Mast	31	Granulocytes
+Neutrophil	31	Granulocytes
+NK	37	NK Cell
+Tcm	39	T Cell
+Tem	15	T Cell
+Tfh	32	T Cell
+Th	23	T Cell
+Th1	27	T Cell
+Th2	27	T Cell
+Tumor	37	Tumor

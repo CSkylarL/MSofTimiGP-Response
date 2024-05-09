@@ -1,0 +1,161 @@
+aNK	TimiGP	rMast
+CD8 T	TimiGP	rMast
+rNK	TimiGP	rMast
+aNK	TimiGP	aMast
+CD8 T	TimiGP	aMast
+Tgd	TimiGP	rMast
+rNK	TimiGP	aMast
+aCD4 Tm	TimiGP	rMast
+M1	TimiGP	rMast
+aNK	TimiGP	Monocyte
+Tgd	TimiGP	aMast
+M1	TimiGP	aMast
+aCD4 Tm	TimiGP	aMast
+CD8 T	TimiGP	Monocyte
+M1	TimiGP	Monocyte
+CD8 T	TimiGP	rDC
+aNK	TimiGP	Eosinophil
+aNK	TimiGP	rDC
+rNK	TimiGP	Monocyte
+M1	TimiGP	rDC
+rCD4 Tm	TimiGP	rMast
+CD8 T	TimiGP	rCD4 Tm
+rNK	TimiGP	rCD4 Tm
+aNK	TimiGP	rCD4 Tm
+aNK	TimiGP	M2
+M1	TimiGP	rCD4 Tm
+M1	TimiGP	Eosinophil
+rNK	TimiGP	Eosinophil
+CD8 T	TimiGP	M2
+Tfh	TimiGP	rMast
+rNK	TimiGP	rDC
+CD8 T	TimiGP	Eosinophil
+Tgd	TimiGP	rDC
+Tgd	TimiGP	Monocyte
+rCD4 Tm	TimiGP	aMast
+rNK	TimiGP	M2
+aNK	TimiGP	Bm
+aCD4 Tm	TimiGP	rDC
+CD8 T	TimiGP	Bm
+aCD4 Tm	TimiGP	Eosinophil
+M1	TimiGP	M2
+Tgd	TimiGP	Eosinophil
+M1	TimiGP	Bm
+rNK	TimiGP	Bm
+Tfh	TimiGP	aMast
+aNK	TimiGP	Bn
+CD8 T	TimiGP	CD4 Tn
+M1	TimiGP	aNK
+M1	TimiGP	Bn
+rNK	TimiGP	Bn
+aDC	TimiGP	rMast
+rNK	TimiGP	CD4 Tn
+M1	TimiGP	CD8 T
+aDC	TimiGP	aMast
+aCD4 Tm	TimiGP	Monocyte
+M1	TimiGP	CD4 Tn
+CD8 T	TimiGP	Bn
+M1	TimiGP	rNK
+rNK	TimiGP	CD8 T
+M1	TimiGP	Treg
+Tgd	TimiGP	M2
+M1	TimiGP	Tfh
+Tgd	TimiGP	rCD4 Tm
+aCD4 Tm	TimiGP	Bm
+aNK	TimiGP	CD4 Tn
+Treg	TimiGP	rMast
+rNK	TimiGP	aNK
+rNK	TimiGP	Treg
+aNK	TimiGP	CD8 T
+Treg	TimiGP	aMast
+CD8 T	TimiGP	Treg
+aNK	TimiGP	Treg
+aCD4 Tm	TimiGP	M2
+aCD4 Tm	TimiGP	Bn
+rCD4 Tm	TimiGP	rDC
+rNK	TimiGP	Tfh
+CD8 T	TimiGP	Tfh
+aNK	TimiGP	Tfh
+CD8 T	TimiGP	aNK
+aDC	TimiGP	rDC
+Tfh	TimiGP	rDC
+CD4 Tn	TimiGP	rMast
+aNK	TimiGP	rNK
+aNK	TimiGP	Neutrophil
+Tgd	TimiGP	Bm
+aDC	TimiGP	Eosinophil
+M1	TimiGP	Neutrophil
+aCD4 Tm	TimiGP	rCD4 Tm
+M1	TimiGP	aDC
+aDC	TimiGP	Monocyte
+CD4 Tn	TimiGP	aMast
+Tgd	TimiGP	CD4 Tn
+CD8 T	TimiGP	Neutrophil
+Tfh	TimiGP	Eosinophil
+aDC	TimiGP	rCD4 Tm
+M1	TimiGP	Tgd
+Tgd	TimiGP	Bn
+rNK	TimiGP	Neutrophil
+Tgd	TimiGP	Treg
+rCD4 Tm	TimiGP	Eosinophil
+rCD4 Tm	TimiGP	Bn
+CD8 T	TimiGP	rNK
+aCD4 Tm	TimiGP	CD4 Tn
+rCD4 Tm	TimiGP	Bm
+Tgd	TimiGP	aNK
+M1	TimiGP	M0
+rCD4 Tm	TimiGP	M2
+aCD4 Tm	TimiGP	Tfh
+aCD4 Tm	TimiGP	Neutrophil
+Tgd	TimiGP	CD8 T
+Tgd	TimiGP	Neutrophil
+aDC	TimiGP	M2
+Tgd	TimiGP	Tfh
+Bm	TimiGP	rMast
+M1	TimiGP	aCD4 Tm
+Bm	TimiGP	aMast
+Bn	TimiGP	rMast
+Treg	TimiGP	rDC
+M2	TimiGP	aMast
+rCD4 Tm	TimiGP	Monocyte
+rNK	TimiGP	Tgd
+aDC	TimiGP	aNK
+aCD4 Tm	TimiGP	rNK
+aCD4 Tm	TimiGP	Treg
+M2	TimiGP	rMast
+aCD4 Tm	TimiGP	aNK
+aNK	TimiGP	Tgd
+Bn	TimiGP	aMast
+Tgd	TimiGP	rNK
+rCD4 Tm	TimiGP	CD4 Tn
+aDC	TimiGP	Tfh
+CD8 T	TimiGP	Tgd
+Plasma	TimiGP	aMast
+aDC	TimiGP	CD4 Tn
+aDC	TimiGP	CD8 T
+M1	TimiGP	Plasma
+Eosinophil	TimiGP	rMast
+CD4 Tn	TimiGP	rDC
+Eosinophil	TimiGP	aMast
+rDC	TimiGP	aMast
+aDC	TimiGP	Treg
+aDC	TimiGP	Bm
+Plasma	TimiGP	rMast
+aCD4 Tm	TimiGP	CD8 T
+aDC	TimiGP	Bn
+Treg	TimiGP	Eosinophil
+rDC	TimiGP	rMast
+aCD4 Tm	TimiGP	M0
+aNK	TimiGP	M1
+Tfh	TimiGP	M2
+aCD4 Tm	TimiGP	aDC
+Neutrophil	TimiGP	aMast
+Tfh	TimiGP	Bm
+aCD4 Tm	TimiGP	M1
+Monocyte	TimiGP	aMast
+aDC	TimiGP	rNK
+rNK	TimiGP	M1
+CD8 T	TimiGP	M1
+Tfh	TimiGP	Bn
+Tfh	TimiGP	Monocyte
+rCD4 Tm	TimiGP	Tfh
