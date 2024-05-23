@@ -45,12 +45,12 @@ for (i in 1:length(myinf1)) {
   myoutd1 <- paste0(myoutd,dataset[i])
   dir.create(myoutd1)
   
-  myoutf1 <- paste0(myoutd1,"/",dataset[i],"_TNBC_MPS.rda")
-  myoutf2 <- paste0(myoutd1,"/",dataset[i],"_TNBC_FISHER_MP.rda")
-  myoutf3 <- paste0(myoutd1,"/",dataset[i],"_TNBC_ENRICH_responder.rda")
-  myoutf4 <- paste0(myoutd1,"/",dataset[i],"_TNBC_dotplot.pdf")
-  myoutf5 <- paste0(myoutd1,"/",dataset[i],"_TNBC_circle.pdf")
-  myoutf6 <- paste0(myoutd1,"/",dataset[i],"_TNBC_score.pdf")
+  myoutf1 <- paste0(myoutd1,"/",dataset[i],"_MPS.rda")
+  myoutf2 <- paste0(myoutd1,"/",dataset[i],"_FISHER_MP.rda")
+  myoutf3 <- paste0(myoutd1,"/",dataset[i],"_ENRICH_responder.rda")
+  myoutf4 <- paste0(myoutd1,"/",dataset[i],"_dotplot.pdf")
+  myoutf5 <- paste0(myoutd1,"/",dataset[i],"_circle.pdf")
+  myoutf6 <- paste0(myoutd1,"/",dataset[i],"_score.pdf")
   
   cat("\nResponder: ",i, dataset[i], "TNBC info",
       "R/NR" ,"rna", "id_pair","range(rna)\n")
