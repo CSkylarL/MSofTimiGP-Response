@@ -15,8 +15,6 @@ rm(list = ls())
 library(ggplot2)
 library(TimiGP)
 library(dplyr)
-library(RColorBrewer)
-
 library(ComplexHeatmap)
 library(circlize)
 
