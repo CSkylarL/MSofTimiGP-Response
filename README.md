@@ -35,6 +35,7 @@ This repository contains the codes and intermediate data for the manuscript of t
     1) `code` folder: config files and R codes to generate the corresponding figures.
         - [config.rda](./Fig2/code/config.rda) file: config file for the R codes.
         - `Fig2.*.R` files: R codes to generate the corresponding figures. Please run following the order of the file name (from script 1 to 5).
+        - [sessionInfo.txt](./Fig2/code/sessionInfo.txt) file: the session information of the R environment.
     2) `result` folder: intermediate results and original figures.
         - [pan_cancer_Tumor_TIME_control](./Fig2/result/pan_cancer_Tumor_TIME_control/) folder: results generated from [Fig2.script1_pan_cancer_Tumor_TIME_control.R](./Fig2/code/Fig2.script1_pan_cancer_Tumor_TIME_control.R)
         - [pan_cancer_TIME_landscape](./Fig2/result/pan_cancer_TIME_landscape/) folder: results generated from [Fig2.script2_pan_cancer_TIME_landscape.R](./Fig2/code/Fig2.script2_pan_cancer_TIME_landscape.R)
