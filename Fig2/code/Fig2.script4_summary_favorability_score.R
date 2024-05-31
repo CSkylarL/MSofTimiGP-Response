@@ -11,8 +11,6 @@ rm(list = ls())
 library(ggplot2)
 library(TimiGP)
 library(dplyr)
-library(RColorBrewer)
-library(VennDiagram)
 library(scatterpie)
 
 # Input & Output ===============================================================
