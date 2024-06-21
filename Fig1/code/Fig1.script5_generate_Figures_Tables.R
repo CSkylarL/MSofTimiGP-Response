@@ -517,6 +517,97 @@ for ( dd in 1: length(myinf1)) {
   # add "* FDR < 0.1" and" border circle, P-Value < 0.05" to the dot plot
 }
 
+# TimiGP score & IMC count  ---------------------------------------------
+# Visualize IMC res (count per patient - reponse) 
+# Compared with the TimiGP favorability score 
+# ExtendedDataFig 4
+dd <- 1
+load(myinf1[dd])
+load(myinf2)
+rna_ds_id <- basename(myinf1[dd]) %>% strsplit("_") %>% 
+  lapply("[[", 2) %>% unlist()
+
+myoutf2 <- paste0(myoutd,"/FigS4_Cell.Type_",rna_ds_id,"_",treatment[dd],"_dotplot.pdf")
+cat("\n",basename(myoutf1), ":", basename(myinf1[dd]))
+
+# extract spatial result
+imc_res <- NULL
+tp <- names(spatial_ref[[treatment[dd]]])
+for ( ii in tp) {
+  print(ii)
+  imc_res[[ii]] <- spatial_ref[[treatment[dd]]][[ii]]$log_res_cell %>%
+    rownames_to_column("Cell.Type") %>% 
+    mutate(Cell.Type = gsub(pattern = ".",replacement = "+", 
+                            x = Cell.Type,fixed = T)  ) %>%
+    mutate(Group = ii) 
+  
+}
+
+# Spatial Heatmap 
+# plot data
+p.data <- matrix(ncol = length(imc_res$Baseline$Cell.Type),nrow = 3)
+rownames(p.data) <- factor(c("Baseline","On-treatment",   "Post-treatment"),
+                           levels = c("Baseline","On-treatment",   "Post-treatment"))
+
+colnames(p.data) <- factor(score$Cell.Type, 
+                           levels = score$Cell.Type)
+pv <- qv <- p.data
+for ( ii in rownames(p.data) ) {
+  print(ii)
+  tmp <- spatial_ref[[treatment[dd]]][[ii]]$log_res_cell %>%
+    rownames_to_column("Cell.Type") %>% 
+    mutate(Cell.Type = gsub(pattern = ".",replacement = "+", 
+                            x = Cell.Type,fixed = T)  ) %>%
+    filter(Cell.Type %in% colnames(p.data)) %>%
+    column_to_rownames("Cell.Type") 
+  tmp <- tmp[colnames(p.data),]
+  p.data[ii,] <- log(tmp$OR) # Odds Ratio
+  pv[ii,] <- tmp$PV
+  qv[ii,] <- tmp$QV # FDR
+  
+}
+# draw heatmap 
+
+cellAnn <-qv
+p2 <-  Heatmap(as.matrix(p.data),  
+               cluster_rows = F, 
+               cluster_columns = F,
+               heatmap_legend_param = list(title = "log(Odds Ratio)"), 
+               col = colorRamp2(c(-0.07, 0, 0.02), c("blue", "white", "red")),
+               border_gp = gpar(col = "black", lty = 1),
+               rect_gp = gpar(col = "white", lwd = 0.5),
+               bottom_annotation = 
+                 columnAnnotation(
+                   CellType = colnames(p.data),
+                   col = list(CellType = color[colnames(p.data)]),
+                   show_annotation_name = c(CellType = F),
+                   show_legend = F),
+               cell_fun = function(j, i, x, y, w, h, fill) {
+                 
+                 if(cellAnn[i, j] <0.05) {
+                   gb = textGrob("*")
+                   gb_w = convertWidth(grobWidth(gb), "mm")
+                   gb_h = convertHeight(grobHeight(gb), "mm")
+                   grid.text("*", x, y - gb_h*0.6 + gb_w*0.4,
+                             gp = gpar(fontsize = 15))
+                 }
+               },
+               
+               row_title=NULL,
+               show_row_names = T,
+               row_names_side = 'left',
+               row_gap = unit(1, "mm"),
+               column_title_gp = gpar(fontsize = 15),
+               width = ncol(p.data)*unit(5, "mm"),
+               height = nrow(p.data)*unit(5, "mm"))
+
+# Describe CD8+GZMB+T (baselinie) is the only one significant after correction
+# Add * FDR < 0.05 with illustrator
+
+pdf(myoutf2, width = 6,height = 4)
+print(p2)
+dev.off()
+
 
 # Tables ######################################################################
 
