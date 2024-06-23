@@ -16,6 +16,8 @@ The `data` folder should contains the following subfolders:
 
     In addition to this preprocessed data, this repository also contains the intermediate and result files generated with TimiGP-Response. If you want to explore the immune landscape assocaited with the response to immunotherapy, you can use the intermediate files in the [Fig2](../Fig2/result/) folder. Please refer to the [README](../README.md) for more information.
 
+    Note: The data file name is a little different from what displayed in our manuscript. The [config file](../Fig2/code/config.csv) provide the mapping between the data file name ("oldname") and the dataset name in the manuscript ("newname"), and the location to the TimiGP-response result folder.
+
 3. `TNBC_IMC_zenodo.7990870` folder: preprocessed image mass cytometry (IMC) data for TNBC patients, which is downloaded from [zenodo](https://doi.org/10.5281/zenodo.7990870). Please request the data from the original publication. Once you have the data, please rename the downloaded folder as `TNBC_IMC_zenodo.7990870` and save it to the `data` folder. The path to the data should be `data/TNBC_IMC_zenodo.7990870/`.
   
    
