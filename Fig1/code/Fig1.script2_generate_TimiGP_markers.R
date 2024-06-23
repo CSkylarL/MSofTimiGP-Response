@@ -22,13 +22,22 @@ warnings("---------Find markers for TimiGP----------")
 
 
 # The input data is the Seurat object normalized.data from the previous script
-myind <- "./Fig1/result/TNBC_scRNA_GSE169246/"
+# Fig1.script1_Preprocess_scRNAseq.R
+# Please run the previous script before running this script or 
+# Download the preprocessed data from zenodo
+# https://doi.org/10.5281/zenodo.12209783
+# Please decompress "TNBC_scRNA_GSE169246.zip"
+# and move them into the `data` folder
+# The path should be
+#  "./data/TNBC_scRNA_GSE169246/*.rda"
+
+myind <- "./data/TNBC_scRNA_GSE169246/"
 myinf1 <- paste0(myind, "celltyping_all.rds")
 
 # The output directory
 myoutd <- "./Fig1/result/customized_markers_for_TimiGP/"
 dir.create(myoutd, showWarnings = F)
-myoutf1 <- paste0(myind, "unprocessed_markers_for_TimiGP.rda")
+myoutf1 <- paste0(myoutd, "unprocessed_markers_for_TimiGP.rda")
 
 # Load the data
 normalized.data <- readRDS(myinf1)

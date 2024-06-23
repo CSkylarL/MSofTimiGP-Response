@@ -20,7 +20,11 @@ myconfig <- "./Fig2/code/config.rda"
 load(myconfig)
 config <- config [which(config$CI_geneset == "Bindea2013_Cancer"),]
 # input & output dir ------------------------------------------------------------
+
+# please following the instruction to create the input directory
+# path to instruction: ./data/README.md
 myind <- "./data/bulk_transcriptomics/"
+
 myoutd <- "./Fig2/result/pan_cancer_Tumor_TIME_control/"
 dir.create(myoutd)
 

@@ -438,9 +438,10 @@ dev.off()
 saveRDS(normalized.data,file = myoutf11)
 saveRDS(NKT,file = myoutf12)
 # These two files were stored through zenodo
-# in the "data" folders
-# Please download the subfolder "TNBC_scRNA_GSE169246"
-# and save them in the following path
-#  "./data/TNBC_scRNA_GSE169246/"
+# https://doi.org/10.5281/zenodo.12209783
+# Please download and decompressed "TNBC_scRNA_GSE169246.zip"
+# and move them into the `data` folder
+# The path should be
+#  "./data/TNBC_scRNA_GSE169246/*.rda"
 
 sessionInfo()

@@ -1,5 +1,5 @@
 # MSofTimiGP-Response
-This repo includes all codes and intermediate for the manuscript of the TimiGP-Response. Of note, it includes the cell-cell interaction network of each dataset for the pan-cancer immune landscape associated with immunotherapy response.
+This repo includes all codes and intermediate for [the manuscript of the TimiGP-Response](https://www.biorxiv.org/content/10.1101/2024.06.21.600089v1.full). Of note, it includes the cell-cell interaction network of each dataset for the pan-cancer immune landscape associated with immunotherapy response.
 
 ## Table of Contents
 - [TimiGP-Response](#timigp-response)
@@ -12,12 +12,13 @@ This repo includes all codes and intermediate for the manuscript of the TimiGP-R
 ## TimiGP-Response
 TimiGP-Response is an analysis module under the [TimiGP computaional framework](https://github.com/CSkylarL/TimiGP). It is designed to infer cell-cell interactions in tumor immune microenvironment (TIME) through gene pairs, and evaluate the cell types assocaited with immunotherapy response.
 
-# TODO
-For more details, please read our manuscript: [TimiGP: ](https://doi.org/10.1016/j.xcrm.2023.101121).
+For more details, please read our manuscript: [TimiGP-Response: the pan-cancer immune landscape associated with response to immunotherapy.](https://doi.org/10.1016/j.xcrm.2023.101121).
 
 ## Overview of the Repository
 This repository contains the codes and intermediate data for the manuscript of the TimiGP-Response. The repository is organized as follows:
-1. `Fig1` folder: The codes and intermediate data for Fig1.
+1. `data` folder: The data used in this study are publicly available. Please follow the [instruction](./data/README.md) to download datasets to complete the [data](./data/) folder.
+
+2. `Fig1` folder: The codes and intermediate data for Fig1.
     1) `code` folder: config files and R codes to generate the corresponding figures.
         - [Fig1_config.R](./Fig1/code/Fig1_config.R) file: config file for the R codes.
         - [Fig1_function.R](./Fig1/code/Fig1_function.R) file: function file for the R codes.
@@ -31,7 +32,7 @@ This repository contains the codes and intermediate data for the manuscript of t
         - [TNBC_spatial_ratio_responder](./Fig1/result/TNBC_spatial_ratio_responder/) folder: results generated from [Fig1.script4_reanalyze_spatial_IMC.R](./Fig1/code/Fig1.script4_reanalyze_spatial_IMC.R)
         - [Figures_Tables](./Fig1/result/Figures_Tables/) folder: results generated from [Fig1.script5_generate_Figures_Tables.R](./Fig1/code/Fig1.script5_generate_Figures_Tables.R)                         
 
-2. `Fig2` folder: The codes and intermediate data for Fig2.
+3. `Fig2` folder: The codes and intermediate data for Fig2.
     1) `code` folder: config files and R codes to generate the corresponding figures.
         - [config.rda](./Fig2/code/config.rda) file: config file for the R codes.
         - `Fig2.*.R` files: R codes to generate the corresponding figures. Please run following the order of the file name (from script 1 to 5).
@@ -43,13 +44,8 @@ This repository contains the codes and intermediate data for the manuscript of t
         - [summary](./Fig2/result/summary/) folder: results generated from [Fig2.script4_summary_favorability_score.R](./Fig2/code/Fig2.script4_summary_favorability_score.R) and [Fig2.script5_summary_TIME_similarity.R](./Fig2/code/Fig2.script5_summary_TIME_similarity.R)
 
 ## Dataset Description
-The datasets used in this study are publicly available. The preprocessed datasets for this study are stored through zenodo. Please request and download the datasets and move the `data` folder to the root directory of the repository. 
-# TODO
-zenodo link
 
-The `data` folder contains the following subfolders:
-1. `TNBC_scRNA_GSE169246` folder: preprocessed scRNA-seq data for TNBC patients, which is downloaded from [GSE169246](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE169246) and preprocessed with [Fig1.script1_Preprocess_scRNAseq.R](./Fig1/code/Fig1.script1_Preprocess_scRNAseq.R).
-2. `bulk_transcriptomics` folder: preprocessed bulk transcriptomics data for pan-cancer patients. The details of the datasets are described in the following table.
+Here is a summary of the pan-cancer immunotherapy datasets (bulk transcriptomics) used in this study:
     
 | Cancer Type | Datasets | Targets | No. Samples | No. Non-responder (0) | No. Responder (1) | Drug | Therapy Type | Reference |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -192,7 +188,7 @@ This repo is intended for research use only.
 If you use TimiGP-Response in your publication, please cite the paper:
 
 # TODO
-Li, C. et al. TimiGP-Response: 
+Li, C. et al. TimiGP-Response: the pan-cancer immune landscape associated with response to immunotherapy. bioRxiv. (2024)
 
 ## LICENSE
 

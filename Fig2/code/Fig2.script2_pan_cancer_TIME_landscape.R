@@ -21,7 +21,8 @@ load(myconfig)
 config <- config [which(config$CI_geneset == "Newman2015"),]
 
 # input & output dir ------------------------------------------------------------
-
+# please following the instruction to create the input directory
+# path to instruction: ./data/README.md
 myind <- "./data/bulk_transcriptomics/"
 myoutd <- "./Fig2/result/pan_cancer_TIME_landscape/"
 dir.create(myoutd)

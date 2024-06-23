@@ -30,12 +30,14 @@ library(reshape)
 myconfig1 <- "./Fig1/code/Fig1_config.R"
 
 
-# These two files were preprocessed in Fig1.script1_Preprocess_scRNAseq.R
-# And stored through zenodo
-# in the "data" folders
-# Please download the subfolder "TNBC_scRNA_GSE169246"
-# and save them in the following path
-#  "./data/TNBC_scRNA_GSE169246/"
+# These two input files were preprocessed in Fig1.script1_Preprocess_scRNAseq.R
+# Please run the previous script before running this script or 
+# Download the preprocessed data from zenodo
+# https://doi.org/10.5281/zenodo.12209783
+# Please decompress "TNBC_scRNA_GSE169246.zip"
+# and move them into the `data` folder
+# The path should be
+#  "./data/TNBC_scRNA_GSE169246/*.rda"
 
 myinf1 <- "./data/TNBC_scRNA_GSE169246/celltyping_all.rds"
 myinf2 <- "./data/TNBC_scRNA_GSE169246/celltyping_NKT.rds"
@@ -45,7 +47,9 @@ myinf2 <- "./data/TNBC_scRNA_GSE169246/celltyping_NKT.rds"
 # Here is the link to download the Table S1
 # https://www.cell.com/cms/10.1016/j.ccell.2021.09.010/attachment/91cf6d86-3d31-41d4-8597-04aaff65572c/mmc2.xlsx
 # This table was reformatted and saved as a csv file
-# which is strode through zenodo in the subfolder "TNBC_scRNA_GSE169246"
+# which is stored through zenodo together above two inputs
+# # https://doi.org/10.5281/zenodo.12209783
+
 myinf3 <- "./data/TNBC_scRNA_GSE169246/clinical_info.csv"
 
 # The output files
