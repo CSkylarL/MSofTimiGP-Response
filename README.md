@@ -186,9 +186,7 @@ The cell-cell interaction network associated with immunotherpay responders and t
 This repo is intended for research use only. 
 
 If you use TimiGP-Response in your publication, please cite the paper:
-
-# TODO
-Li, C. et al. TimiGP-Response: the pan-cancer immune landscape associated with response to immunotherapy. bioRxiv. (2024)
+Li, C. et al. TimiGP-Response: the pan-cancer immune landscape associated with response to immunotherapy. bioRxiv, 2024.2006.2021.600089, doi:10.1101/2024.06.21.600089 (2024).
 
 ## LICENSE
 
